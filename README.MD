@@ -23,16 +23,19 @@ O objetivo é **economizar tempo da equipe**, que não precisará mais revisar m
 
 ## 📂 Estrutura do Projeto
 
+```plaintext
 app/
-├── main.py # Arquivo principal com FastAPI
-├── routes/ # Rotas
+├── main.py            # Arquivo principal com FastAPI
+├── routes/            # Rotas
 ├── utils/
-│ ├── text_extractor.py # Leitura e pré-processamento dos e-mails
-│ ├── hf_integration.py # Integração com Hugging Face API
-├── config.py # Variáveis de ambiente e tokens de API
-├── statics/ # Arquivos estáticos (CSS, JS, imagens)
-├── templates/ # HTMLs do formulário e exibição de resultados
-mocks/ # pasta com arquivos de teste 
+│   ├── text_extractor.py   # Leitura e pré-processamento dos e-mails
+│   ├── hf_integration.py   # Integração com Hugging Face API
+├── config.py          # Variáveis de ambiente e tokens de API
+├── statics/           # Arquivos estáticos (CSS, JS, imagens)
+├── templates/         # HTMLs do formulário e exibição de resultados
+mocks/                 # Pasta com arquivos de teste
+```
+
 --- 
 
 ## 🧠 Guia de configuração do projeto
