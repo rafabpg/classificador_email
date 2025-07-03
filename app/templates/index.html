@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AutoU - Classificador de Emails</title>
+    <link rel="icon" href="/static/images/favicon.png" type="image/png">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/index_page.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-envelope-open-text"></i> Classificador de Emails</h1>
+            <p>Automatize a análise de seus emails com IA</p>
+        </header>
+
+        <main>
+            <div class="upload-container">
+                <div class="tabs">
+                    <button class="tab-btn active" data-tab="text-tab">Digitar Texto</button>
+                    <button class="tab-btn" data-tab="file-tab">Enviar Arquivo</button>
+                </div>
+
+                <div class="tab-content active" id="text-tab">
+                    <textarea id="email-text" placeholder="Cole o conteúdo do email aqui..."></textarea>
+                </div>
+
+                <div class="tab-content" id="file-tab">
+                    <div class="dropzone" id="dropzone">
+                        <i class="fas fa-cloud-upload-alt"></i>
+                        <p>Arraste arquivos .txt ou .pdf aqui</p>
+                        <span>ou</span>
+                        <button class="browse-btn">Selecionar Arquivo</button>
+                        <input type="file" id="file-input" accept=".txt,.pdf" hidden>
+                    </div>
+                    <div class="file-info" id="file-info"></div>
+                </div>
+
+                <button id="analyze-btn" class="analyze-btn">
+                    <i class="fas fa-robot"></i> Analisar Email
+                </button>
+            </div>
+
+            <div class="result-container" id="result-container">
+                <div class="result-header">
+                    <h2><i class="fas fa-chart-bar"></i> Resultado da Análise</h2>
+                </div>
+                <div class="result-content">
+                    <div class="result-category">
+                        <h3>Categoria:</h3>
+                        <span id="category-badge" class="badge">-</span>
+                    </div>
+                    <div class="result-suggestion">
+                        <h3>Sugestão de Resposta:</h3>
+                        <div id="suggestion-text" class="suggestion-text">-</div>
+                        <button id="copy-btn" class="copy-btn">
+                            <i class="far fa-copy"></i> Copiar
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>Desenvolvido para o processo seletivo AutoU</p>
+        </footer>
+    </div>
+
+    <script type="module" src="static/js/script.js"></script>
+</body>
+</html>
