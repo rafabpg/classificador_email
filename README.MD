@@ -17,7 +17,7 @@ O objetivo é **economizar tempo da equipe**, que não precisará mais revisar m
 
 ## 🌐 Deploy - Render
 
-[🔗 **Acesse o projeto em produção**](https://seusite.com)
+[🔗 **Acesse o projeto em produção**](https://classificador-email.onrender.com/)
 
 ---
 
